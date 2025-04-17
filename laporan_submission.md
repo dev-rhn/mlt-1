@@ -274,4 +274,6 @@ Boosting dan Linear Regression (LR) memiliki performa prediksi yang kurang baik 
 
 ## Conclusion
 
-test
+Berdasarkan evaluasi dengan metrik MSE dan R² pada data pengujian, penelitian ini menyimpulkan bahwa model tree-based seperti XGBoost dan LightGBM menunjukkan performa terbaik dalam memprediksi harga mobil bekas dan melakukan generalisasi ke data baru, diikuti oleh Random Forest yang juga memberikan hasil yang baik. Sementara KNN dan Random Forest cenderung mengalami overfitting, model Boosting dan Linear Regression menunjukkan performa yang kurang optimal dalam menangkap pola data dan menjelaskan varians harga. Secara keseluruhan, XGBoost, LightGBM, dan Random Forest direkomendasikan sebagai pilihan terbaik untuk memprediksi harga mobil bekas dalam dataset ini karena kemampuan generalisasi dan penjelasan varians harga yang unggul.
+
+Selain itu beberapa variabel yang mempengaruhi harga
