@@ -2,7 +2,9 @@
 
 ## Proyek Prediksi Harga Mobil (Car Price Prediction)
 
-Abstracts
+**Abstracts**
+
+Penelitian ini bertujuan untuk mengembangkan atau mengidentifikasi metode yang lebih objektif dan akurat untuk memprediksi harga mobil bekas berdasarkan data riwayat penjualan, serta meningkatkan pemahaman pembeli dan penjual mengenai faktor-faktor penentu harga yang sebenarnya. Berbagai model regresi, termasuk K-Nearest Neighbors (KNN), Random Forest, AdaBoost, Linear Regression, XGBoost, dan LightGBM, dievaluasi menggunakan dataset harga mobil bekas. Hasil evaluasi berdasarkan Mean Squared Error (MSE) pada data pengujian menunjukkan bahwa XGBoost dan LightGBM mampu melakukan generalisasi terbaik ke data yang belum pernah dilihat. Sementara KNN dan Random Forest terindikasi mengalami overfitting, Boosting dan Linear Regression menunjukkan performa prediksi yang kurang optimal. Berdasarkan nilai R-squared (R²) pada data pengujian, XGBoost, LightGBM, dan Random Forest mampu menjelaskan varians harga dengan lebih baik dibandingkan model lainnya. Secara keseluruhan, penelitian ini menyimpulkan bahwa model tree-based seperti XGBoost dan LightGBM, serta Random Forest, merupakan pilihan yang paling efektif untuk memprediksi harga mobil bekas dalam dataset yang dianalisis, karena kemampuan generalisasi dan akurasi prediksinya yang unggul.
 
 **Introduction**:
 
