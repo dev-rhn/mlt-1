@@ -60,7 +60,7 @@ Pada penelitian ini, peneliti menggunakan dataset yang berasal dari platform Kag
 
 [Kaggle - Ford Car Price Prediction](https://www.kaggle.com/datasets/adhurimquku/ford-car-price-prediction).
 
-<img src="images/dataset.png" alt="Teks Alternatif" width="500">
+![dataset](https://github.com/user-attachments/assets/2367ce4d-fbaf-483b-a6b9-7cdc51ed5061)
 
 ### Exploratory Data Analysis (EDA):
 
@@ -90,21 +90,7 @@ Berdasarkan informasi dari dataset Ford Car Price Prediction, berikut ini penjel
 
 Semua kolom memiliki **17.966 nilai non-null**, menandakan tidak ada data yang hilang.
 
-**2. Menangani Outliers**
-
-Pada tahapan selanjutnya, peneliti mencoba untuk mendeteksi outliers dengan teknik visualisasi data (boxplot). Kemudian peneliti akan menangani outliers dengan teknik IQR method. Berikut ini hasil boxplot dari beberapa variable yang ada:
-
-<img src="images/boxplot-price.png" alt="Boxplot Price" width="300">
-<img src="images/boxplot-mileage.png" alt="Boxplot Mileage" width="300">
-<img src="images/boxplot-tax.png" alt="Boxplot Tax" width="300">
-<img src="images/boxplot-mpg.png" alt="Boxplot MPG" width="300">
-<img src="images/boxplot-engineSize.png" alt="Boxplot-Engine Size" width="300">
-
-Berdasarkan boxplot pada beberapa variabel yang ada, ada beberapa data yang berperan menjadi outlier. Penanganan outlier dengan menggunakan IQR Method dilakukan untuk menghapus data yang kurang relevan sehingga menjaga validitas pada pelatihan model klasifikasi atau meningkatkan kualitas prediksi pada proses selanjutnya. Setelah menghapus data yang mengandung outlier, data tersisa 16.448 data.
-
-<img src="images/boxplot-engineSize.png" alt="Teks Alternatif" width="300">
-
-**3. Univariate Analysis**
+**2. Univariate Analysis**
 
 Tahap selanjutnya dalam proses EDA yaitu melakukan Univariate Analysis yaitu teknik analisis data yang fokus pada pemeriksaan dan deskripsi satu variabel tunggal pada suatu waktu. Pada tahapan ini akan dibagi menjadi dua fitur yaitu numerical features dan categorical features.
 
@@ -112,27 +98,25 @@ Tahap selanjutnya dalam proses EDA yaitu melakukan Univariate Analysis yaitu tek
 
 - Model
 
-<img src="images/categorical_features-model.png" alt="Categorical Features - Model" width="300">
+![eda-model](https://github.com/user-attachments/assets/cc7eef78-41d4-43c6-88da-6057c65311de)
 
-Berdasarkan gambar diatas, didapati bahwa model **Fiesta** menjadi model yang paling banyak terjual dengan total 6.198 dan disusul model **Focus** dengan 4.171 dan model **Kuga** dengan 2.065. Selain itu juga banyak model lain yang terjual namun tidak sebanyak 3 model mobil sebelumnya.
+Berdasarkan gambar diatas, didapati bahwa model **Fiesta** menjadi model yang paling banyak terjual dengan total 6557 dan disusul model **Focus** dengan 4588 dan model **Kuga** dengan 2225. Selain itu juga banyak model lain yang terjual namun tidak sebanyak 3 model mobil sebelumnya.
 
 - Transmission
 
-<img src="images/categorical_features-transmission.png" alt="Categorical Features - Transmission" width="300">
+![eda-transmission](https://github.com/user-attachments/assets/f7f79e03-db4e-4cc1-8323-0ca3d538bf15)
 
-Berdasarkan gambar diatas, transmission yang paling banyak adalah Manual dengan 87% dari total data yang ada. Hal ini menunjukkan model mobil dengan transmission Manual merupakan model yang paling laku dipasaran.
+Berdasarkan gambar diatas, transmission yang paling banyak adalah Manual dengan 86% dari total data yang ada. Hal ini menunjukkan model mobil dengan transmission Manual merupakan model yang paling laku dipasaran.
 
 - Fuel Type
 
-<img src="images/categorical_features-fuelType.png" alt="Categorical Features - Fuel Type" width="300">
+![eda-fueltype](https://github.com/user-attachments/assets/26599533-bcf7-469d-8f8f-99f7d9374bea)
 
-Berdasarkan gambar diatas dari tipe bahan bakar yang banyak digunakan, Petrol mendominasi dengan 11477 dan disusul oleh Diesel dengan 4960. Kedua tipe ini lebih dominan dibandingkan dengan tipe lain seperti Hybrid dan Electric. Hal ini menunjukkan bahwa pada masa itu kendaraan listrik belum begitu populer di kalangan masyarakat.
+Berdasarkan gambar diatas dari tipe bahan bakar yang banyak digunakan, Petrol mendominasi dengan 12179 dan disusul oleh Diesel dengan 5762. Kedua tipe ini lebih dominan dibandingkan dengan tipe lain seperti Hybrid dan Electric. Hal ini menunjukkan bahwa pada masa itu kendaraan listrik belum begitu populer di kalangan masyarakat.
 
 **b. numerical features**
 
-<img src="images/numerical_features-price-year.png" alt="Categorical Features - Fuel Type" width="650">
-<img src="images/numerical_features-mileage-tax.png" alt="Categorical Features - Fuel Type" width="650">
-<img src="images/numerical_features-mpg-engineSize.png" alt="Categorical Features - Fuel Type" width="650">
+![eda-num-features](https://github.com/user-attachments/assets/28821f1b-2480-4103-8313-7e4ad5308caa)
 
 Berikut ini penjelasan masing-masing histogram:
 
@@ -143,15 +127,15 @@ Berikut ini penjelasan masing-masing histogram:
 5. Penggunaan bahan bakar mobil dalam dataset ini terkumpul di beberapa rentang tertentu, menunjukkan adanya berbagai jenis transmission yang menghasilkan tingkat efisiensi yang berbeda. Puncak di sekitar 60-65 mpg menunjukkan rentang efisiensi yang paling umum.
 6. Ukuran mesin mobil dalam dataset ini terkonsentrasi pada beberapa nilai tertentu, terutama 1.0, diikuti oleh 1.6 dan 2.0. Ukuran mesin lainnya kurang umum dalam dataset ini.
 
-**4. Multivariate Analysis**
+**3. Multivariate Analysis**
 
 **Categorical Features**
+
+![eda-multivariate-cat-features](https://github.com/user-attachments/assets/64bcb3c2-5189-42b6-8bbc-ad268a41f458)
 
 Ada tiga buah bar plot yang memvisualisasikan rata-rata harga (price) mobil berdasarkan tiga variabel kategorikal yang berbeda, model, transmission, dan fuelType. Berikut ini detail penjelasannya:
 
 **1. Rata-rata harga berdasarkan model mobil**
-
-<img src="images/multivariate-model.png" alt="Categorical Features - Fuel Type" width="650">
 
 - Beberapa model seperti Edge, Tourneo Custom, dan Galaxy cenderung memiliki rata-rata harga yang jauh lebih tinggi dibandingkan model lain seperti KA, Fiesta, dan Focus.
 
@@ -159,14 +143,10 @@ Ada tiga buah bar plot yang memvisualisasikan rata-rata harga (price) mobil berd
 
 **2. Rata-rata Harga Berdasarkan Jenis Transmisi**
 
-<img src="images/multivariate-transmission.png" alt="Categorical Features - Fuel Type" width="650">
-
 - Mobil dengan transmisi Automatic cenderung memiliki rata-rata harga yang lebih tinggi dibandingkan mobil dengan transmisi Manual.
 - Mobil dengan transmisi Semi-Auto memiliki rata-rata harga yang paling tinggi di antara ketiganya.
 
 **3. Rata-rata Harga Berdasarkan Jenis Bahan Bakar**
-
-<img src="images/multivariate-fueltype.png" alt="Categorical Features - Fuel Type" width="650">
 
 - Mobil dengan bahan bakar Hybrid memiliki rata-rata harga yang paling tinggi secara signifikan dibandingkan jenis bahan bakar lainnya dalam dataset ini.
 - Mobil dengan bahan bakar Electric juga memiliki rata-rata harga yang cukup tinggi, meskipun sedikit di bawah Hybrid.
@@ -174,44 +154,71 @@ Ada tiga buah bar plot yang memvisualisasikan rata-rata harga (price) mobil berd
 
 **Numerical Features**
 
-<img src="images/multivariate-numerical.png" alt="Numerical Features" width="1000">
+![eda-multivariate-num-features](https://github.com/user-attachments/assets/1ac242c2-4c61-4c6a-acd7-de0d81034fa1)
 
 Gambar ini menampilkan sebuah pair plot yang dibuat menggunakan library seaborn. Pair plot sangat berguna untuk memvisualisasikan hubungan antara pasangan variabel numerik dalam sebuah dataset. Dalam kasus ini,variabel - variabel numerik yang dianalisis adalah 'year', 'price', 'mileage', dan 'tax', mpg, dan engineSize.
 
 **Correlation Matrix**
 
-<img src="images/correlation-matrix.png" alt="Correlation Matrix" width="450">
+![correlation-matrix](https://github.com/user-attachments/assets/618230ef-f157-4918-98eb-1e852cdeb4aa)
 
 Pada gambar diatas menampilkan sebuah Correlation Matrix (Matriks Korelasi) yang divisualisasikan menggunakan heatmap. Matriks ini menunjukkan koefisien korelasi antara pasangan fitur-fitur numerik dalam dataset mobil. Beberapa fitur menunjukkan korelasi yang cukup kuat (misalnya, tahun dengan harga dan jarak tempuh), sementara yang lain memiliki korelasi yang lemah.
 
 ## Data Preparation
 
-Pada bagian ini, peneliti melakukan beberapa tahapan yaitu melakukan encoding fitur kategori, pembagian dataset, dan melakukan standarisasi sehingga siap digunakan untuk pelatihan pada model yang dirancang.
+Pada bagian ini, peneliti melakukan beberapa tahapan yaitu melakukan penanganan outlier, encoding fitur kategori, pembagian dataset, dan melakukan standarisasi sehingga siap digunakan untuk pelatihan pada model yang dirancang.
+
+**Menangani Outliers**
+
+Pada tahapan selanjutnya, peneliti mencoba untuk mendeteksi outliers dengan teknik visualisasi data (boxplot). Kemudian peneliti akan menangani outliers dengan teknik IQR method. Berikut ini hasil boxplot dari beberapa variable yang ada:
+
+![boxplot-price](https://github.com/user-attachments/assets/0946a379-d8ed-4d0e-9fb9-18094952eb50)
+![boxplot-mpg](https://github.com/user-attachments/assets/5e41c091-881b-41d7-8e80-1b7e557be25a)
+![boxplot-mileage](https://github.com/user-attachments/assets/d2882588-4896-45b9-ae07-5e7af11fb22b)
+![boxplot-engineSize](https://github.com/user-attachments/assets/9c6672c3-802a-4584-8608-c8f0e9f9389e)
+![boxplot-tax](https://github.com/user-attachments/assets/9ec5bcc2-5060-4c5b-a501-fb90b6b819ed)
+
+Berdasarkan boxplot pada beberapa variabel yang ada, ada beberapa data yang berperan menjadi outlier. Penanganan outlier dengan menggunakan IQR Method dilakukan untuk menghapus data yang kurang relevan sehingga menjaga validitas pada pelatihan model klasifikasi atau meningkatkan kualitas prediksi pada proses selanjutnya. Setelah menghapus data yang mengandung outlier, data tersisa 16.448 data.
+
+**Pengecekkan Missing Value**
+
+Dalam melakukan pengecekan missing value, saya melakukan dengan mengecek jumlah data "isnull" dan hasil yang didapatkan tidak ada missing value
+
+![missing-value](https://github.com/user-attachments/assets/7bf37b72-f437-47d3-bd21-5ff537bddc55)
 
 **Encoding Fitur Kategori**:
 
 **_One-hot encoding_** adalah teknik yang umum digunakan untuk mengubah data kategorikal menjadi format numerik yang dapat dipahami oleh sebagian besar algoritma machine learning. Setiap kategori dalam sebuah fitur kategorikal diubah menjadi kolom biner (0 atau 1) atau true dan false. Ini mencegah algoritma mengasumsikan adanya urutan atau jarak antara kategori (seperti yang mungkin terjadi jika kita hanya memberikan label numerik pada kategori).
 
-<img src="images/one-hot-encoding.png" alt="Correlation Matrix" width="950">
+![encoding](https://github.com/user-attachments/assets/66203dbc-d459-4860-aa59-842e71af147c)
 
 **Pembagian Dataset**
 Pada tahapan ini, peneliti melakukan pembagian dataset menjadi data pelatihan (train) dan data pengujian (test). Dataset akan dibagi menjadi fitur (X) yang berisi semua kolom kecuali 'price', dan target (y) yang hanya berisi kolom 'price'. Selanjutnya, dengan menggunakan fungsi **train_test_split** membagi data ini menjadi set pelatihan (80% untuk X_train dan y_train) yang akan digunakan untuk melatih model, dan set pengujian (20% untuk X_test dan y_test) yang akan digunakan untuk mengevaluasi performa model pada data yang belum pernah dilihat, dengan random_state=123 memastikan pembagian data yang konsisten untuk reproduktibilitas. Dengan total masing-masing dataset yang sudah dibagi sebagai berikut:
 
-Total sample in whole dataset: 17966
+Total sample in whole dataset: 16448
 
-Total sample in train dataset: 14372
+Total sample in train dataset: 13158
 
-Total sample in test dataset: 3594
+Total sample in test dataset: 3290
 
 **Standarisasi**
 
 Tahapan ini dilakukan bertujuan untuk melakukan standardisasi pada fitur-fitur numerik tertentu ('year', 'mileage', 'tax', 'mpg', 'engineSize') dalam set pelatihan (X_train). Standardisasi dilakukan menggunakan **StandardScaler** dari scikit-learn, yang menghitung mean dan standar deviasi dari setiap fitur numerik dalam X_train, kemudian mentransformasikan nilai-nilai fitur tersebut sehingga memiliki mean mendekati nol dan standar deviasi mendekati satu. Proses ini penting untuk memastikan bahwa fitur-fitur numerik dengan skala yang berbeda tidak memberikan pengaruh yang tidak proporsional pada model machine learning dan dapat membantu algoritma konvergen lebih cepat.
 
-<img src="images/standarisasi-1.png" alt="Correlation Matrix" width="450">
+![standarisasi](https://github.com/user-attachments/assets/0e6325f5-cc14-4b6a-ac67-cfd9fa279a35)
 
 ## Modeling
 
 Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Ada beberapa model yang dirancang seperti KNN, Random Forest, AdaBoost, Linear Regression, XGBoost, dan LightGBM.
+
+| Model             | Cara Kerja                                                                                                                                                                                                                                                                             |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| KNN               | Mengklasifikasikan atau memprediksi titik data baru berdasarkan label atau nilai mayoritas dari sejumlah kecil tetangga terdekatnya dalam ruang fitur, diukur dengan metrik jarak seperti Euclidean.                                                                                   |
+| Random Forest     | Membangun banyak pohon keputusan secara independen pada subset data dan fitur yang dipilih secara acak, kemudian menggabungkan prediksi mereka melalui voting (klasifikasi) atau averaging (regresi) untuk menghasilkan hasil yang lebih robust dan akurat.                            |
+| AdaBoost          | Melatih serangkaian model lemah secara berurutan, dengan setiap model berikutnya memberikan lebih banyak perhatian pada contoh yang salah diklasifikasikan oleh model sebelumnya, dan menggabungkan prediksi mereka dengan memberikan bobot pada setiap model berdasarkan kinerjanya.  |
+| Linear Regression | Memodelkan hubungan linier antara variabel dependen dan satu atau lebih variabel independen dengan menemukan garis atau bidang terbaik yang meminimalkan jumlah kuadrat selisih antara nilai prediksi dan sebenarnya.                                                                  |
+| XGBoost           | Algoritma gradient boosting yang dioptimalkan, membangun pohon secara berurutan untuk memprediksi residual, menggunakan regularisasi L1 dan L2 untuk mencegah overfitting, dan mendukung komputasi paralel untuk kecepatan dan efisiensi.                                              |
+| LightGBM          | Algoritma gradient boosting yang dirancang untuk kecepatan dan efisiensi memori, menggunakan teknik seperti Gradient-based One-Side Sampling (GOSS) dan Exclusive Feature Bundling (EFB) serta strategi pertumbuhan pohon leaf-wise untuk mencapai performa tinggi pada dataset besar. |
 
 ### Perbandingan Kelebihan dan Kekurangan Model
 
@@ -239,14 +246,14 @@ Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyel
 
 Pada bagian ini peneliti akan melakukan evaluasi pada model yang sudah dilatih sebelumnya dengan menggunakan Mean Square Error (MSE) dan R Squared (R²).
 
-| Matriks Evaluasi        | Rumus Matematis                                                      | Definisi                                                                                                                                                                                                                                                                                                                      | Kelebihan                                                                                                                                                                                                                                 | Kekurangan                                                                                                                                                                                  |
-| ----------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mean Square Error (MSE) | <img src="images/mse.png" alt="Correlation Matrix" width="450">      | Mean Squared Error (MSE) adalah salah satu metrik evaluasi yang paling umum digunakan untuk mengukur kinerja model regresi. Secara sederhana, MSE menghitung rata-rata dari kuadrat selisih antara nilai prediksi model dengan nilai sebenarnya (nilai target).                                                               | Memberikan penalti yang lebih besar untuk kesalahan prediksi yang besar karena adanya operasi kuadrat. Ini menjadikannya sensitif terhadap outlier yang menghasilkan kesalahan besar.                                                     | Sangat sensitif terhadap outlier. Sebuah prediksi yang sangat jauh dari nilai sebenarnya akan memberikan kontribusi kuadrat yang besar terhadap nilai MSE.                                  |
-| R-Squared (R²)          | <img src="images/r-square.png" alt="Correlation Matrix" width="450"> | R-squared, juga dikenal sebagai koefisien determinasi, adalah metrik evaluasi yang mengukur seberapa baik variabilitas variabel dependen (target) dapat dijelaskan oleh model regresi. Dengan kata lain, R-squared menunjukkan proporsi varians dalam variabel target yang dapat diprediksi dari variabel independen (fitur). | Lebih mudah diinterpretasikan daripada MSE karena nilainya berada dalam skala 0 hingga 1, yang merepresentasikan proporsi varians yang dijelaskan dan dapat memberikan indikasi seberapa baik model cocok dengan data secara keseluruhan. | Tidak menunjukkan apakah model bias atau tidak. Model dengan R-squared tinggi masih bisa menghasilkan prediksi yang secara sistematis lebih tinggi atau lebih rendah dari nilai sebenarnya. |
+| Matriks Evaluasi        | Rumus Matematis                                                                              | Definisi                                                                                                                                                                                                                                                                                                                      | Kelebihan                                                                                                                                                                                                                                 | Kekurangan                                                                                                                                                                                  |
+| ----------------------- | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mean Square Error (MSE) | ![mse](https://github.com/user-attachments/assets/1d53a237-7f17-4458-aa41-b8452d7897e7)      | Mean Squared Error (MSE) adalah salah satu metrik evaluasi yang paling umum digunakan untuk mengukur kinerja model regresi. Secara sederhana, MSE menghitung rata-rata dari kuadrat selisih antara nilai prediksi model dengan nilai sebenarnya (nilai target).                                                               | Memberikan penalti yang lebih besar untuk kesalahan prediksi yang besar karena adanya operasi kuadrat. Ini menjadikannya sensitif terhadap outlier yang menghasilkan kesalahan besar.                                                     | Sangat sensitif terhadap outlier. Sebuah prediksi yang sangat jauh dari nilai sebenarnya akan memberikan kontribusi kuadrat yang besar terhadap nilai MSE.                                  |
+| R-Squared (R²)          | ![r-square](https://github.com/user-attachments/assets/0681d0a5-1d35-4ce9-a20c-8906fdeb4dda) | R-squared, juga dikenal sebagai koefisien determinasi, adalah metrik evaluasi yang mengukur seberapa baik variabilitas variabel dependen (target) dapat dijelaskan oleh model regresi. Dengan kata lain, R-squared menunjukkan proporsi varians dalam variabel target yang dapat diprediksi dari variabel independen (fitur). | Lebih mudah diinterpretasikan daripada MSE karena nilainya berada dalam skala 0 hingga 1, yang merepresentasikan proporsi varians yang dijelaskan dan dapat memberikan indikasi seberapa baik model cocok dengan data secara keseluruhan. | Tidak menunjukkan apakah model bias atau tidak. Model dengan R-squared tinggi masih bisa menghasilkan prediksi yang secara sistematis lebih tinggi atau lebih rendah dari nilai sebenarnya. |
 
 ### Hasil Mean Square Error (MSE)
 
-<img src="images/hasil-mse.png" alt="Hasil MSE" width="250">
+![mse](https://github.com/user-attachments/assets/58175c9e-d219-4622-a95c-05e36dbe9c0e)
 
 Berdasarkan nilai MSE pada data pengujian:
 
@@ -256,7 +263,7 @@ Berdasarkan nilai MSE pada data pengujian:
 
 ### Hasil R-Squared (R²)
 
-<img src="images/hasil-r-square.png" alt="Hasil R²" width="250">
+![rsq](https://github.com/user-attachments/assets/8420fde6-97ef-4aa7-8f88-dad3d87e0e02)
 
 Berdasarkan nilai R² pada data pengujian:
 
@@ -264,11 +271,11 @@ Berdasarkan nilai R² pada data pengujian:
 2. Sebagian besar model menunjukkan generalisasi yang cukup baik karena nilai R² pada data pengujian tidak jauh berbeda dari nilai pada data pelatihan.
 3. Boosting dan Linear Regression memiliki nilai R² yang lebih rendah dibandingkan model lainnya, menunjukkan bahwa mereka tidak menjelaskan varians dalam harga sebaik model-model tree-based atau berbasis tetangga.
 
-Secara keseluruhan, berdasarkan metrik R², model XGBoost, LightGBM, dan Random Forest tampaknya menjadi pilihan terbaik untuk memprediksi harga mobil dalam dataset ini. Mereka mampu menjelaskan sebagian besar varians dalam harga dan menunjukkan kemampuan generalisasi yang baik.
+Secara keseluruhan, berdasarkan metrik R², model XGBoost, LightGBM, dan Random Forest tampaknya menjadi pilihan terbaik untuk memprediksi harga mobil dalam dataset ini. Mereka mampu menjelaskan sebagian besar varians dalam hargma dan menunjukkan kemampuan generalisasi yang baik.
 
 **Visualisasi Mean Square Error (MSE)**
 
-<img src="images/hasil-mse-2.png" alt="Hasil Visualisasi MSE" width="550">
+![visual-mse](https://github.com/user-attachments/assets/431cd708-438c-4d43-86b3-e8cd165bb16c)
 
 Berdasarkan visualisasi diatas, LGBM dan XGBoost menunjukkan performa terbaik dalam melakukan generalisasi ke data yang belum pernah dilihat (MSE terendah pada batang oranye). Random Forest (RF) menunjukkan overfitting yang jelas karena MSE pada data pelatihan sangat rendah, tetapi meningkat tajam pada data pengujian. KNN juga menunjukkan indikasi overfitting.
 
@@ -277,5 +284,3 @@ Boosting dan Linear Regression (LR) memiliki performa prediksi yang kurang baik 
 ## Conclusion
 
 Berdasarkan evaluasi dengan metrik MSE dan R² pada data pengujian, penelitian ini menyimpulkan bahwa model tree-based seperti XGBoost dan LightGBM menunjukkan performa terbaik dalam memprediksi harga mobil bekas dan melakukan generalisasi ke data baru, diikuti oleh Random Forest yang juga memberikan hasil yang baik. Sementara KNN dan Random Forest cenderung mengalami overfitting, model Boosting dan Linear Regression menunjukkan performa yang kurang optimal dalam menangkap pola data dan menjelaskan varians harga. Secara keseluruhan, XGBoost, LightGBM, dan Random Forest direkomendasikan sebagai pilihan terbaik untuk memprediksi harga mobil bekas dalam dataset ini karena kemampuan generalisasi dan penjelasan varians harga yang unggul.
-
-Selain itu beberapa variabel yang mempengaruhi harga
