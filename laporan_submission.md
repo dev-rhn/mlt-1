@@ -271,7 +271,7 @@ Berdasarkan nilai R² pada data pengujian:
 2. Sebagian besar model menunjukkan generalisasi yang cukup baik karena nilai R² pada data pengujian tidak jauh berbeda dari nilai pada data pelatihan.
 3. Boosting dan Linear Regression memiliki nilai R² yang lebih rendah dibandingkan model lainnya, menunjukkan bahwa mereka tidak menjelaskan varians dalam harga sebaik model-model tree-based atau berbasis tetangga.
 
-Secara keseluruhan, berdasarkan metrik R², model XGBoost, LightGBM, dan Random Forest tampaknya menjadi pilihan terbaik untuk memprediksi harga mobil dalam dataset ini. Mereka mampu menjelaskan sebagian besar varians dalam hargma dan menunjukkan kemampuan generalisasi yang baik.
+Secara keseluruhan, berdasarkan metrik R², model XGBoost, LightGBM, dan Random Forest tampaknya menjadi pilihan terbaik untuk memprediksi harga mobil dalam dataset ini. Mereka mampu menjelaskan sebagian besar varians dalam harga dan menunjukkan kemampuan generalisasi yang baik.
 
 **Visualisasi Mean Square Error (MSE)**
 
@@ -281,6 +281,20 @@ Berdasarkan visualisasi diatas, LGBM dan XGBoost menunjukkan performa terbaik da
 
 Boosting dan Linear Regression (LR) memiliki performa prediksi yang kurang baik secara keseluruhan (MSE tinggi pada test set). Untuk tugas regresi ini, LGBM dan XGBoost tampaknya menjadi pilihan model yang lebih baik karena memiliki MSE yang rendah pada data pengujian dan menunjukkan generalisasi yang baik (perbedaan kecil antara train dan test MSE).
 
+**Analisis Hasil Evaluasi Berdasarkan Business Understanding**
+
+Hasil MSE menunjukkan bahwa semua model masih memiliki tingkat kesalahan prediksi harga yang signifikan pada data test. Ini mengindikasikan bahwa ketidakpastian dalam penentuan harga mobil bekas masih menjadi tantangan, dan model-model yang diuji belum sepenuhnya mampu menghilangkan ketidakpastian tersebut. Meskipun beberapa model memiliki MSE yang lebih rendah dari yang lain, nilai absolut MSE pada data test masih relatif tinggi, menunjukkan adanya variasi harga yang tidak sepenuhnya dapat dijelaskan oleh fitur-fitur yang digunakan dalam model.
+
+Hasil R-Squared pada data test menunjukkan proporsi varians harga mobil bekas. XGBoost dan LightGBM menunjukkan performa terbaik dalam memanfaatkan informasi dari data pelatihan untuk memprediksi harga pada data baru. Ini mengindikasikan bahwa kedua model ini lebih baik dalam menangkap pola-pola dalam data yang relevan untuk penilaian harga yang lebih konsisten dibandingkan model lainnya. Random Forest juga menunjukkan generalisasi yang cukup baik meskipun R-Squared test-nya sedikit lebih rendah dari XGBoost dan LightGBM.
+
 ## Conclusion
 
-Berdasarkan evaluasi dengan metrik MSE dan R² pada data pengujian, penelitian ini menyimpulkan bahwa model tree-based seperti XGBoost dan LightGBM menunjukkan performa terbaik dalam memprediksi harga mobil bekas dan melakukan generalisasi ke data baru, diikuti oleh Random Forest yang juga memberikan hasil yang baik. Sementara KNN dan Random Forest cenderung mengalami overfitting, model Boosting dan Linear Regression menunjukkan performa yang kurang optimal dalam menangkap pola data dan menjelaskan varians harga. Secara keseluruhan, XGBoost, LightGBM, dan Random Forest direkomendasikan sebagai pilihan terbaik untuk memprediksi harga mobil bekas dalam dataset ini karena kemampuan generalisasi dan penjelasan varians harga yang unggul.
+Berdasarkan penelitian ini, model XGBoost dan LightGBM menunjukkan potensi terbesar untuk menjadi metode yang lebih objektif dan akurat dalam memprediksi harga mobil bekas. Keduanya memiliki kemampuan generalisasi yang lebih baik ke data yang belum dilihat. Sementara Random Forest juga menunjukkan performa yang solid.
+
+Langkah selanjutnya yang dapat dilakukan sesuai dengan solution statement adalah:
+
+1. Menganalisis Feature Importance dari Model Terbaik (XGBoost dan LightGBM) untuk mengidentifikasi fitur-fitur mana yang paling signifikan dalam menentukan harga mobil bekas, sehingga dapat meningkatkan pemahaman pembeli dan penjual.
+2. Melakukan Tuning Parameter Lebih Lanjut sebagai eksplorasi parameter yang berbeda untuk XGBoost dan LightGBM sehingga dapat meningkatkan performa prediksi lebih lanjut dan mengurangi nilai MSE pada data test.
+3. Mengevaluasi Model pada Lebih Banyak Data dengan menguji model pada dataset yang lebih besar dan lebih beragam dapat memberikan gambaran yang lebih komprehensif tentang kemampuan generalisasi model.
+
+Dengan fokus pada model-model terbaik dan menganalisis faktor-faktor penting yang mereka identifikasi, penelitian ini dapat bergerak menuju pengembangan solusi yang lebih objektif dan meningkatkan pemahaman mengenai penentuan harga mobil bekas.
