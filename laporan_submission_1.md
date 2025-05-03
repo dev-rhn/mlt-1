@@ -60,7 +60,7 @@ Pada penelitian ini, peneliti menggunakan dataset yang berasal dari platform Kag
 
 [Kaggle - Ford Car Price Prediction](https://www.kaggle.com/datasets/adhurimquku/ford-car-price-prediction).
 
-![dataset](https://private-user-images.githubusercontent.com/202646848/437281286-2367ce4d-fbaf-483b-a6b9-7cdc51ed5061.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDU3MzU4MDgsIm5iZiI6MTc0NTczNTUwOCwicGF0aCI6Ii8yMDI2NDY4NDgvNDM3MjgxMjg2LTIzNjdjZTRkLWZiYWYtNDgzYi1hNmI5LTdjZGM1MWVkNTA2MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDI3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQyN1QwNjMxNDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02MGYyOTE3MTlmMGQ3YmQyZmNmZTY0Y2Q3YTRlYjZlNmY1M2NlZWMxNmM5NzExNTRmNjg0ZDc1MTg4M2M4MjgxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.q7Imiq7pv2fUbm6QK5LjIOatU_hV_HtrSrMKsUuFmao)
+![dataset](images/dataset.png)
 
 ### Exploratory Data Analysis (EDA):
 
@@ -100,25 +100,25 @@ Tahap selanjutnya dalam proses EDA yaitu melakukan Univariate Analysis yaitu tek
 
 - Model
 
-![eda-model](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437281368-cc7eef78-41d4-43c6-88da-6057c65311de.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T063735Z&X-Amz-Expires=300&X-Amz-Signature=d4bd095f14feb3beba0c276dfe69450af296a69b8fab6f32376c1e54a6cac814&X-Amz-SignedHeaders=host)
+![eda-model](images/eda-model.png)
 
 Berdasarkan gambar diatas, didapati bahwa model **Fiesta** menjadi model yang paling banyak terjual dengan total 6557 dan disusul model **Focus** dengan 4588 dan model **Kuga** dengan 2225. Selain itu juga banyak model lain yang terjual namun tidak sebanyak 3 model mobil sebelumnya.
 
 - Transmission
 
-![eda-transmission](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437281720-f7f79e03-db4e-4cc1-8323-0ca3d538bf15.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T064024Z&X-Amz-Expires=300&X-Amz-Signature=6394a9ebbd6b48f711255a9095586099d44cc2b7fb81788a58baa22f1b7252bc&X-Amz-SignedHeaders=host)
+![eda-transmission](images/eda-transmission.png)
 
 Berdasarkan gambar diatas, transmission yang paling banyak adalah Manual dengan 86% dari total data yang ada. Hal ini menunjukkan model mobil dengan transmission Manual merupakan model yang paling laku dipasaran.
 
 - Fuel Type
 
-![eda-fueltype](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437281983-26599533-bcf7-469d-8f8f-99f7d9374bea.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T064044Z&X-Amz-Expires=300&X-Amz-Signature=6c3a6ce1c2e12031c2ad3b1ec90ccc407a0ffee42acd5ba86dd6fab31a3e0346&X-Amz-SignedHeaders=host)
+![eda-fueltype](images/eda-fueltype.png)
 
 Berdasarkan gambar diatas dari tipe bahan bakar yang banyak digunakan, Petrol mendominasi dengan 12179 dan disusul oleh Diesel dengan 5762. Kedua tipe ini lebih dominan dibandingkan dengan tipe lain seperti Hybrid dan Electric. Hal ini menunjukkan bahwa pada masa itu kendaraan listrik belum begitu populer di kalangan masyarakat.
 
 **b. numerical features**
 
-![eda-num-features](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437282373-28821f1b-2480-4103-8313-7e4ad5308caa.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T064108Z&X-Amz-Expires=300&X-Amz-Signature=5ed25382d3493d6eb0c3085ea76cb6e23b5c48439d75143f71698d0c85567bd0&X-Amz-SignedHeaders=host)
+![eda-num-features](images/eda-num-features.png)
 
 Berikut ini penjelasan masing-masing histogram:
 
@@ -133,7 +133,7 @@ Berikut ini penjelasan masing-masing histogram:
 
 **Categorical Features**
 
-![eda-multivariate-cat-features](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437283175-64bcb3c2-5189-42b6-8bbc-ad268a41f458.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T064140Z&X-Amz-Expires=300&X-Amz-Signature=728606fe62f2657a498b595ce7c98cc67b109bb8621a35983ccd4062caa125c9&X-Amz-SignedHeaders=host)
+![eda-multivariate-cat-features](images/eda-multivariate-cat-features.png)
 
 Ada tiga buah bar plot yang memvisualisasikan rata-rata harga (price) mobil berdasarkan tiga variabel kategorikal yang berbeda, model, transmission, dan fuelType. Berikut ini detail penjelasannya:
 
@@ -156,13 +156,13 @@ Ada tiga buah bar plot yang memvisualisasikan rata-rata harga (price) mobil berd
 
 **Numerical Features**
 
-![eda-multivariate-num-features](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437390956-1ac242c2-4c61-4c6a-acd7-de0d81034fa1.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T064209Z&X-Amz-Expires=300&X-Amz-Signature=a435d16c27ca3c932018f984218a21f7e3bf765f67b84fc20939cdda84b29a77&X-Amz-SignedHeaders=host)
+![eda-multivariate-num-features](images/eda-multivariate-num-features.png)
 
 Gambar ini menampilkan sebuah pair plot yang dibuat menggunakan library seaborn. Pair plot sangat berguna untuk memvisualisasikan hubungan antara pasangan variabel numerik dalam sebuah dataset. Dalam kasus ini,variabel - variabel numerik yang dianalisis adalah 'year', 'price', 'mileage', dan 'tax', mpg, dan engineSize.
 
 **Correlation Matrix**
 
-![correlation-matrix](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437284524-618230ef-f157-4918-98eb-1e852cdeb4aa.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T064234Z&X-Amz-Expires=300&X-Amz-Signature=8ca115332174b04d7513e9a749bfe5ed0c95f0bdf30776047e11beea38395528&X-Amz-SignedHeaders=host)
+![correlation-matrix](images/correlation-matrix.png)
 
 Pada gambar diatas menampilkan sebuah Correlation Matrix (Matriks Korelasi) yang divisualisasikan menggunakan heatmap. Matriks ini menunjukkan koefisien korelasi antara pasangan fitur-fitur numerik dalam dataset mobil. Beberapa fitur menunjukkan korelasi yang cukup kuat (misalnya, tahun dengan harga dan jarak tempuh), sementara yang lain memiliki korelasi yang lemah.
 
@@ -174,11 +174,11 @@ Pada bagian ini, peneliti melakukan beberapa tahapan yaitu melakukan penanganan 
 
 Pada tahapan selanjutnya, peneliti mencoba untuk mendeteksi outliers dengan teknik visualisasi data (boxplot). Kemudian peneliti akan menangani outliers dengan teknik IQR method. Berikut ini hasil boxplot dari beberapa variable yang ada:
 
-![boxplot-price](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437386169-0946a379-d8ed-4d0e-9fb9-18094952eb50.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T064301Z&X-Amz-Expires=300&X-Amz-Signature=006d26af2568d9d8f3a8c838a2b3a920eb78d6fda4c070a58ea29f589cb15d0d&X-Amz-SignedHeaders=host)
-![boxplot-mpg](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437386364-5e41c091-881b-41d7-8e80-1b7e557be25a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T064323Z&X-Amz-Expires=300&X-Amz-Signature=d56ef815efacdb3a30a1625add72a2204b7b3562aac84ca7b043f3c582f93394&X-Amz-SignedHeaders=host)
-![boxplot-mileage](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437386392-d2882588-4896-45b9-ae07-5e7af11fb22b.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T064427Z&X-Amz-Expires=300&X-Amz-Signature=e7cfa931fe4b475d205cefdc30a0c8117f57aba7324a9db3871601d1bcb06e4d&X-Amz-SignedHeaders=host)
-![boxplot-engineSize](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437386404-9c6672c3-802a-4584-8608-c8f0e9f9389e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T064446Z&X-Amz-Expires=300&X-Amz-Signature=4bcde6ade1ff7758ccff1af8adc41fa6d793901ce85a1cfbc8f8fa7a70dc18d5&X-Amz-SignedHeaders=host)
-![boxplot-tax](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437386437-9ec5bcc2-5060-4c5b-a501-fb90b6b819ed.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T064508Z&X-Amz-Expires=300&X-Amz-Signature=5787e715e38421cc31151627cf649fd34b6e21a87f66bf177559bdc6da80c3a5&X-Amz-SignedHeaders=host)
+![boxplot-price](images/boxplot-price.png)
+![boxplot-mpg](images/boxplot-mpg.png)
+![boxplot-mileage](images/boxplot-mileage.png)
+![boxplot-engineSize](images/boxplot-engineSize.png)
+![boxplot-tax](images/boxplot-tax.png)
 
 Berdasarkan boxplot pada beberapa variabel yang ada, ada beberapa data yang berperan menjadi outlier. Penanganan outlier dengan menggunakan IQR Method dilakukan untuk menghapus data yang kurang relevan sehingga menjaga validitas pada pelatihan model klasifikasi atau meningkatkan kualitas prediksi pada proses selanjutnya. Setelah menghapus data yang mengandung outlier, data tersisa 16.448 data.
 
@@ -186,7 +186,7 @@ Berdasarkan boxplot pada beberapa variabel yang ada, ada beberapa data yang berp
 
 **_One-hot encoding_** adalah teknik yang umum digunakan untuk mengubah data kategorikal menjadi format numerik yang dapat dipahami oleh sebagian besar algoritma machine learning. Setiap kategori dalam sebuah fitur kategorikal diubah menjadi kolom biner (0 atau 1) atau true dan false. Ini mencegah algoritma mengasumsikan adanya urutan atau jarak antara kategori (seperti yang mungkin terjadi jika kita hanya memberikan label numerik pada kategori).
 
-![encoding](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437399719-66203dbc-d459-4860-aa59-842e71af147c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T074027Z&X-Amz-Expires=300&X-Amz-Signature=71b0a260149ce87debf7ec810f34aa9ebb81b68dc7ccc2d4c3aaa9e5990b8ab7&X-Amz-SignedHeaders=host)
+![encoding](images/encoding.png)
 
 **Pembagian Dataset**
 Pada tahapan ini, peneliti melakukan pembagian dataset menjadi data pelatihan (train) dan data pengujian (test). Dataset akan dibagi menjadi fitur (X) yang berisi semua kolom kecuali 'price', dan target (y) yang hanya berisi kolom 'price'. Selanjutnya, dengan menggunakan fungsi **train_test_split** membagi data ini menjadi set pelatihan (80% untuk X_train dan y_train) yang akan digunakan untuk melatih model, dan set pengujian (20% untuk X_test dan y_test) yang akan digunakan untuk mengevaluasi performa model pada data yang belum pernah dilihat, dengan random_state=123 memastikan pembagian data yang konsisten untuk reproduktibilitas. Dengan total masing-masing dataset yang sudah dibagi sebagai berikut:
@@ -201,7 +201,7 @@ Total sample in test dataset: 3290
 
 Tahapan ini dilakukan bertujuan untuk melakukan standardisasi pada fitur-fitur numerik tertentu ('year', 'mileage', 'tax', 'mpg', 'engineSize') dalam set pelatihan (X_train). Standardisasi dilakukan menggunakan **StandardScaler** dari scikit-learn, yang menghitung mean dan standar deviasi dari setiap fitur numerik dalam X_train, kemudian mentransformasikan nilai-nilai fitur tersebut sehingga memiliki mean mendekati nol dan standar deviasi mendekati satu. Proses ini penting untuk memastikan bahwa fitur-fitur numerik dengan skala yang berbeda tidak memberikan pengaruh yang tidak proporsional pada model machine learning dan dapat membantu algoritma konvergen lebih cepat.
 
-![standarisasi](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437398105-0e6325f5-cc14-4b6a-ac67-cfd9fa279a35.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T074045Z&X-Amz-Expires=300&X-Amz-Signature=0c5e6fff872590f86edc9fc4d2da90794a74beb86126b04519553c2cc8dd1e9b&X-Amz-SignedHeaders=host)
+![standarisasi](images/standarisasi.png)
 
 ## Modeling
 
@@ -242,14 +242,14 @@ Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyel
 
 Pada bagian ini peneliti akan melakukan evaluasi pada model yang sudah dilatih sebelumnya dengan menggunakan Mean Square Error (MSE) dan R Squared (R²).
 
-| Matriks Evaluasi        | Rumus Matematis                                                                                                                                                                                                                                                                                                                                                                                                  | Definisi                                                                                                                                                                                                                                                                                                                      | Kelebihan                                                                                                                                                                                                                                 | Kekurangan                                                                                                                                                                                  |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mean Square Error (MSE) | ![mse](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437402830-1d53a237-7f17-4458-aa41-b8452d7897e7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T074152Z&X-Amz-Expires=300&X-Amz-Signature=26a51b43cf76160ecac1b99d11a2ccc82f32f30d021137473644247e41f437e0&X-Amz-SignedHeaders=host)      | Mean Squared Error (MSE) adalah salah satu metrik evaluasi yang paling umum digunakan untuk mengukur kinerja model regresi. Secara sederhana, MSE menghitung rata-rata dari kuadrat selisih antara nilai prediksi model dengan nilai sebenarnya (nilai target).                                                               | Memberikan penalti yang lebih besar untuk kesalahan prediksi yang besar karena adanya operasi kuadrat. Ini menjadikannya sensitif terhadap outlier yang menghasilkan kesalahan besar.                                                     | Sangat sensitif terhadap outlier. Sebuah prediksi yang sangat jauh dari nilai sebenarnya akan memberikan kontribusi kuadrat yang besar terhadap nilai MSE.                                  |
-| R-Squared (R²)          | ![r-square](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437402973-0681d0a5-1d35-4ce9-a20c-8906fdeb4dda.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T074217Z&X-Amz-Expires=300&X-Amz-Signature=74b655b08d1c40333c04efa1f9a696a4794aa98ba6b4c201e498227643e49c50&X-Amz-SignedHeaders=host) | R-squared, juga dikenal sebagai koefisien determinasi, adalah metrik evaluasi yang mengukur seberapa baik variabilitas variabel dependen (target) dapat dijelaskan oleh model regresi. Dengan kata lain, R-squared menunjukkan proporsi varians dalam variabel target yang dapat diprediksi dari variabel independen (fitur). | Lebih mudah diinterpretasikan daripada MSE karena nilainya berada dalam skala 0 hingga 1, yang merepresentasikan proporsi varians yang dijelaskan dan dapat memberikan indikasi seberapa baik model cocok dengan data secara keseluruhan. | Tidak menunjukkan apakah model bias atau tidak. Model dengan R-squared tinggi masih bisa menghasilkan prediksi yang secara sistematis lebih tinggi atau lebih rendah dari nilai sebenarnya. |
+| Matriks Evaluasi        | Rumus Matematis                              | Definisi                                                                                                                                                                                                                                                                                                                      | Kelebihan                                                                                                                                                                                                                                 | Kekurangan                                                                                                                                                                                  |
+| ----------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mean Square Error (MSE) | ![mse](images/mse-rumus.png)                 | Mean Squared Error (MSE) adalah salah satu metrik evaluasi yang paling umum digunakan untuk mengukur kinerja model regresi. Secara sederhana, MSE menghitung rata-rata dari kuadrat selisih antara nilai prediksi model dengan nilai sebenarnya (nilai target).                                                               | Memberikan penalti yang lebih besar untuk kesalahan prediksi yang besar karena adanya operasi kuadrat. Ini menjadikannya sensitif terhadap outlier yang menghasilkan kesalahan besar.                                                     | Sangat sensitif terhadap outlier. Sebuah prediksi yang sangat jauh dari nilai sebenarnya akan memberikan kontribusi kuadrat yang besar terhadap nilai MSE.                                  |
+| R-Squared (R²)          | ![r-square-rumus](images/r-square-rumus.png) | R-squared, juga dikenal sebagai koefisien determinasi, adalah metrik evaluasi yang mengukur seberapa baik variabilitas variabel dependen (target) dapat dijelaskan oleh model regresi. Dengan kata lain, R-squared menunjukkan proporsi varians dalam variabel target yang dapat diprediksi dari variabel independen (fitur). | Lebih mudah diinterpretasikan daripada MSE karena nilainya berada dalam skala 0 hingga 1, yang merepresentasikan proporsi varians yang dijelaskan dan dapat memberikan indikasi seberapa baik model cocok dengan data secara keseluruhan. | Tidak menunjukkan apakah model bias atau tidak. Model dengan R-squared tinggi masih bisa menghasilkan prediksi yang secara sistematis lebih tinggi atau lebih rendah dari nilai sebenarnya. |
 
 ### Hasil Mean Square Error (MSE)
 
-![mse](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437403389-58175c9e-d219-4622-a95c-05e36dbe9c0e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T074117Z&X-Amz-Expires=300&X-Amz-Signature=2cd3e4d420f8a5ffaffccedc8ab6520b10b039c317a6401bfea42b619b8f14fc&X-Amz-SignedHeaders=host)
+![mse](images/mse.png)
 
 Berdasarkan nilai MSE pada data pengujian:
 
@@ -259,7 +259,7 @@ Berdasarkan nilai MSE pada data pengujian:
 
 ### Hasil R-Squared (R²)
 
-![rsq](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437403491-8420fde6-97ef-4aa7-8f88-dad3d87e0e02.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T074237Z&X-Amz-Expires=300&X-Amz-Signature=f7c81ef8f84f575c8e7c7fb8971c13e86a97446fded83a7c294ecfd7bbcfada0&X-Amz-SignedHeaders=host)
+![rsq](images/rsq.png)
 
 Berdasarkan nilai R² pada data pengujian:
 
@@ -271,7 +271,7 @@ Secara keseluruhan, berdasarkan metrik R², model XGBoost, LightGBM, dan Random 
 
 **Visualisasi Mean Square Error (MSE)**
 
-![visual-mse](https://github-production-user-asset-6210df.s3.amazonaws.com/202646848/437410926-431cd708-438c-4d43-86b3-e8cd165bb16c.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250427T074255Z&X-Amz-Expires=300&X-Amz-Signature=d7cf5c16e74073e384bdf7defe25b544c78cf09792c00381a5d5b343c10236df&X-Amz-SignedHeaders=host)
+![visual-mse](images/visual-mse.png)
 
 Berdasarkan visualisasi diatas, LGBM dan XGBoost menunjukkan performa terbaik dalam melakukan generalisasi ke data yang belum pernah dilihat (MSE terendah pada batang oranye). Random Forest (RF) menunjukkan overfitting yang jelas karena MSE pada data pelatihan sangat rendah, tetapi meningkat tajam pada data pengujian. KNN juga menunjukkan indikasi overfitting.
 

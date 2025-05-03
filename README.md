@@ -2,6 +2,6 @@
 
 Pada repository ini berisi laporan submission kelas Belajar Machine Learning Terapan
 
-[1. Proyek Prediksi Harga Mobil (Car Price Prediction)](https://github.com/dev-rhn/mlt-1/blob/main/laporan_submission.md)
+[1. Proyek Prediksi Harga Mobil (Car Price Prediction)](https://github.com/dev-rhn/mlt-1/blob/main/laporan_submission_1.md)
 
-[2. Proyek Sistem Rekomendasi (Coming Soon!)]()
+[2. Proyek Sistem Rekomendasi (Anime Recommendation System)](https://github.com/dev-rhn/mlt-1/blob/main/laporan_submission_2.md)
